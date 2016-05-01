@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="team48.coupletones.PendingActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CoupleTones"
+        android:id="@+id/tvTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="56dp"
+        android:textStyle="bold"
+        android:textColor="#9dff00"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="... PENDING ..."
+        android:id="@+id/tvPending"
+        android:layout_marginTop="48dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#b3b1b1"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:id="@+id/bCancel"
+        android:textSize="20dp"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="MAP"
+        android:id="@+id/bMap"
+        android:background="#00aaff"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/bRequest"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Again"
+        android:textAllCaps="false"
+        android:id="@+id/bRemind"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#f6aa06"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/bCancel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
