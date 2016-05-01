@@ -26,5 +26,12 @@ public class SoloActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Email Sent",Toast.LENGTH_SHORT).show();
             }
         });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SoloActivity.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -51,5 +51,12 @@ public class PendingActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"Email Sent",Toast.LENGTH_SHORT).show();
             }
         });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PendingActivity.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

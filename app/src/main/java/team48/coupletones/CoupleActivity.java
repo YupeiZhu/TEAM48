@@ -44,5 +44,12 @@ public class CoupleActivity extends AppCompatActivity {
                 alert.show();
             }
         });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CoupleActivity.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
