@@ -18,37 +18,25 @@
         android:id="@+id/tvTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="56dp"
+        android:textSize="50dp"
         android:textStyle="bold"
         android:textColor="#9dff00"
         android:textAlignment="center" />
 
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/etEmail"
-        android:hint="Enter His/Her Email Address"
-        android:textStyle="italic"
-        android:layout_below="@+id/tvTitle"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="48dp" />
-
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Send Couple Request"
+        android:text="Pair Up"
         android:textAllCaps="false"
-        android:id="@+id/bRequest"
+        android:id="@+id/bAddPartner"
         android:textSize="20dp"
-        android:background="#ff0000"
+        android:background="#99fbe4"
         android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:layout_alignParentStart="false"
-        android:layout_centerInParent="true"
         android:textAlignment="center"
-        android:onClick="showAlert" />
+        android:onClick="showAlert"
+        android:layout_above="@+id/bMap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -56,12 +44,63 @@
         android:layout_height="wrap_content"
         android:text="MAP"
         android:id="@+id/bMap"
-        android:background="#00aaff"
+        android:background="#008cff"
         android:textColor="#ffffff"
-        android:textStyle="bold"
         android:textSize="20dp"
+        android:textAlignment="center"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/bRequest"
-        android:textAlignment="center" />
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:id="@+id/bGetMyID"
+        android:textSize="20dp"
+        android:background="#fbce2c"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:onClick="showAlert"
+        android:layout_below="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMyID"
+        android:layout_below="@+id/bGetMyID"
+        android:layout_alignParentStart="false"
+        android:textSize="13sp"
+        android:hint="DIRECTION:  Once registered, show your Device ID to your partner to pair up! (Both need to be registered!)"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:textIsSelectable="true"
+        android:textColorHint="#d50dfd"
+        android:textAlignment="inherit"
+        android:textColor="#ff0000"
+        android:onClick="SelectRegId"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" />
+
+    <EditText
+        android:id="@+id/etPartnerID"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_above="@+id/bAddPartner"
+        android:textColor="#000000"
+        android:textColorHint="#61000000"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:background="#fcfbef"
+        android:layout_marginBottom="5dp"
+        android:hint="Enter partner&apos;s Device ID">
+
+    </EditText>
 
 </RelativeLayout>

@@ -6,6 +6,7 @@ android {
 
     defaultConfig {
         applicationId "team48.coupletones"
+        multiDexEnabled true
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
@@ -23,5 +24,12 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'
-    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.google.android.gms:play-services-cast:8.4.0'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.backendless:backendless:3.0.15.1'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.6.0'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.6.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.0'
 }
