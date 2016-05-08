@@ -1,3 +1,4 @@
+package team48.coupletones.tests;
 
 import android.test.ActivityInstrumentationTestCase2;
 import team48.coupletones.MainActivity;
