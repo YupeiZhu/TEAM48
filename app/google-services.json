@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "344209905483",
+    "project_id": "coupletones-6fbf2"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344209905483:android:cdb3868b3afe3fdd",
+        "android_client_info": {
+          "package_name": "team48.coupletones"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0lPo9sW8gNCe99A5CXjoXpIspBz4gV2g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
